@@ -22,7 +22,7 @@ func (v *Point) GetDistance(point Point) float64 {
 	xWidth := v.x - point.x
 	yWidth := v.y - point.y
 
-	return math.Sqrt(float64(xWidth*xWidth + yWidth*yWidth))
+	return math.Abs(math.Sqrt(float64(xWidth*xWidth + yWidth*yWidth)))
 }
 
 func main() {
